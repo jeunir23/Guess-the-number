@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 body {
+  font-family: 'Press Start 2P', sans-serif;
   background-color: #d3d3d3;
   align-items: center;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Josefin Sans';
   font-size: 64px;
   text-align: center;
 }
@@ -14,8 +16,4 @@ h1 {
   width: 336px;
   height: 60px;
   background-color: #778699;
-}
-
-.text {
-  text-align: center;
 }
