@@ -13,7 +13,12 @@ h1 {
 }
 
 .button {
-  width: 336px;
-  height: 60px;
+  width: 300px;
+  height: 30px;
   background-color: #778699;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 10px;
 }
