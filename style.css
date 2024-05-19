@@ -38,14 +38,15 @@ header {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 30px;
   background-color: #778699;
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  padding-top: 13px;
   cursor: pointer;
 }
 
