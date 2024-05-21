@@ -12,4 +12,10 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     document.querySelector('.message').textContent = 'No input number 🥹';
   }
+
+  // When guess is wrong
+  else if ((guess = !secretNumber)) {
+    document.querySelector('.message').textContent =
+      guess > secretNumber ? 'Too high 📈' : 'Too low 📉';
+  }
 });
