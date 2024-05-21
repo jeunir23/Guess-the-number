@@ -26,5 +26,6 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct ✅';
+    document.querySelector('.highscore').textContent = score;
   }
 });
