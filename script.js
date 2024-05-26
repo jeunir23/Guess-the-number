@@ -24,8 +24,11 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = 'You lost the game 😭';
       document.querySelector('.score').textContent = 0;
     }
+
+    // When you guess the number
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct ✅';
     document.querySelector('.highscore').textContent = score;
+    document.querySelector('body').style.backgroundColor = '#60b347';
   }
 });
