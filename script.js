@@ -38,7 +38,7 @@ document.querySelector('.button').addEventListener('click', function () {
 
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
-  document.querySelector('.guess').value = '';
+  document.querySelector('.guess').textContent = '';
   document.querySelector('body').style.backgroundColor = '#d3d3d3';
   document.querySelector('.message').textContent = 'Start guessing...';
 });
