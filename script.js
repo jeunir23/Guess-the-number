@@ -7,7 +7,6 @@ let highscore = 0;
 document.querySelector('.number').textContent = '?';
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-
   // No number input
   if (!guess) {
     document.querySelector('.message').textContent = 'No input number 🥹';
@@ -25,10 +24,19 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
 
-    // When you guess the number
+    // When you guess the correct number
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct ✅';
     document.querySelector('.highscore').textContent = score;
     document.querySelector('body').style.backgroundColor = '#60b347';
   }
+});
+
+document.querySelector('.button').addEventListener('click', function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+  document.querySelector('.score').textContent = score;
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('body').style.backgroundColor = '#d3d3d3';
 });
